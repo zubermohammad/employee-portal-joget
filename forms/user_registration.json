@@ -85,7 +85,7 @@
                             "encryption": "",
                             "id": "phoneNumber",
                             "label": "Phone Number",
-                            "maxlength": "",
+                            "maxlength": "10",
                             "placeholder": "",
                             "readonly": "",
                             "readonlyLabel": "",
@@ -93,8 +93,12 @@
                             "storeNumeric": "",
                             "style": "",
                             "validator": {
-                                "className": "",
-                                "properties": {}
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "mandatory": "true",
+                                    "message": "",
+                                    "type": ""
+                                }
                             },
                             "value": "",
                             "workflowVariable": ""
@@ -103,7 +107,7 @@
                 ],
                 "properties": {
                     "elementUniqueKey": "138",
-                    "width": "99%"
+                    "width": "100%"
                 }
             }],
             "properties": {
@@ -212,7 +216,7 @@
                 ],
                 "properties": {
                     "elementUniqueKey": "153",
-                    "width": "99%"
+                    "width": "100%"
                 }
             }],
             "properties": {
