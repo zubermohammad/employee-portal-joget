@@ -1,0 +1,231 @@
+{
+    "categories": [
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.plugin.enterprise.DashboardMenu",
+                "properties": {
+                    "autoHeight": "true",
+                    "customFooter": "<hr>\n<b>#i18n.Tips to Joget administrator#:<\/b><br/>\n<ul>\n<li>#i18n.Input your Joget SMTP server configurations in# <a href=\"/jw/web/console/setting/general\">#i18n.Web Console# > #i18n.General Settings#<\/a> #i18n.to send email messages#.<\/li>\n<li>#i18n.Input an email address for admin user in# <a href=\"/jw/web/console/directory/users\">#i18n.Web Console# > #i18n.Setup Users#<\/a> #i18n.for email notification to work#.<\/li>\n<li>#i18n.Remove the permission in# <a href=\"/jw/web/console/app/dashboard/1/processes/process1\">#i18n.Web Console# > #i18n.Processes# > #i18n.Process Start White List ID#<\/a> #i18n.to allow public to run the# \"#i18n.Register New User#\" #i18n.workflow#.<\/li>\n<\/ul>\n<br/>\n<br/>\n<hr>\n<h1>#i18n.Joget Resources#<\/h1>\n<p>&nbsp;<\/p>\n<ul style=\"line-height: 2.0;\">\n<li><a href=\"https://www.joget.com/\" target=\"_blank\">#i18n.Joget Home#<\/a><\/li>\n<li><a href=\"https://www.joget.org/download/\" target=\"_blank\">#i18n.Joget Downloads#<\/a><\/li>\n<li><a href=\"http://www.jogetcloud.com/\" target=\"_blank\">#i18n.Joget Cloud#<\/a><\/li>\n<li><a href=\"https://academy.joget.com/\" target=\"_blank\">#i18n.Joget Academy#<\/a><\/li>\n<li><a href=\"https://www.youtube.com/user/jogetworkflow\" target=\"_blank\">#i18n.Joget Videos#<\/a><\/li>\n<li><a href=\"https://marketplace.joget.org\" target=\"_blank\">#i18n.Joget Apps Marketplace#<\/a><\/li>\n<li><a href=\"https://dev.joget.org/community/display/DX7/Joget+DX+7+Knowledge+Base\" target=\"_blank\">#i18n.Joget Knowledge Base#<\/a><\/li>\n<li><a href=\"http://answer.joget.org\" target=\"_blank\">#i18n.Joget Answers#<\/a><\/li>\n<li><a href=\"http://blog.joget.org/\" target=\"_blank\">#i18n.Joget Blog#<\/a><\/li>\n<li><a href=\"http://joget.org/buy-enterprise-edition-license/\" target=\"_blank\">#i18n.Purchase Joget License#<\/a><\/li>\n<li><a href=\"https://play.google.com/store/apps/details?id=org.joget.mobile&amp;hl=en\" target=\"_blank\">#i18n.Joget Mobile Android App#<\/a><\/li>\n<li><a href=\"https://itunes.apple.com/us/app/joget-workflow-mobile/id1084995640?mt=8\" target=\"_blank\">#i18n.Joget Mobile iOS App#<\/a><\/li>\n<li><a href=\"https://github.com/jogetworkflow/\" target=\"_blank\">#i18n.Joget Open Source Repository#<\/a><\/li>\n<li><a href=\"https://translate.joget.org\" target=\"_blank\">#i18n.Joget Translations#<\/a><\/li>\n<\/ul>",
+                    "customHeader": "",
+                    "customId": "d",
+                    "customPortletSetting": [
+                        {
+                            "autoHeight": "true",
+                            "autoReload": "",
+                            "fixed": "false",
+                            "height": "",
+                            "menuID": "1",
+                            "resizable": "true",
+                            "width": "2",
+                            "x": "",
+                            "y": ""
+                        },
+                        {
+                            "autoHeight": "false",
+                            "autoReload": "",
+                            "fixed": "false",
+                            "height": "600",
+                            "menuID": "2",
+                            "resizable": "true",
+                            "width": "1",
+                            "x": "",
+                            "y": ""
+                        }
+                    ],
+                    "defaultPortletHeight": "250",
+                    "defaultPortletWidth": "1",
+                    "enableOffline": "",
+                    "id": "525CD003EAB44123B5AD50839A706BC8",
+                    "label": "Dashboard",
+                    "mode": "",
+                    "resizable": "true",
+                    "userviewCacheDuration": "10",
+                    "userviewCacheScope": "application",
+                    "userviewId": "DashboardTemplate"
+                }
+            }],
+            "properties": {
+                "id": "category-F67068B033654C1D83A7E5A2D0567C37",
+                "label": "Home"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.apps.userview.lib.RunProcess",
+                "properties": {
+                    "customId": "registration",
+                    "fieldPassover": "d",
+                    "fieldPassoverMethod": "append",
+                    "id": "D06EC51AA6B948718E4DAC615D434100",
+                    "keyName": "",
+                    "label": "Register New User",
+                    "messageShowAfterComplete": "Thank you for your registration. You will receive a confirmation email on approval by administrator.",
+                    "paramName": "",
+                    "processDefId": "process1",
+                    "redirectUrlAfterComplete": "d",
+                    "runProcessDirectly": "Yes",
+                    "runProcessSubmitLabel": "",
+                    "showInPopupDialog": "Yes",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": ""
+                }
+            }],
+            "properties": {
+                "hide": "",
+                "id": "category-8300FFD168AC4A218781A9810D72F50B",
+                "label": " ",
+                "permission": {
+                    "className": "org.joget.plugin.enterprise.AnonymousUserviewPermission",
+                    "properties": {}
+                }
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.apps.userview.lib.Link",
+                "properties": {
+                    "customId": "ac",
+                    "id": "6EA71723CE95433FB785996CAAEA5268",
+                    "label": "App Center",
+                    "target": "blank",
+                    "url": "../../../appcenter/v",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": ""
+                }
+            }],
+            "properties": {
+                "hide": "",
+                "id": "category-02E30C12872748C39B76E323540CC888",
+                "label": " ",
+                "permission": {
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+                    "properties": {}
+                }
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.plugin.enterprise.UserProfileMenu",
+                "properties": {
+                    "customId": "myprofile",
+                    "f_email": "",
+                    "f_firstName": "",
+                    "f_lastName": "",
+                    "f_locale": "",
+                    "f_password": "",
+                    "f_timeZone": "",
+                    "f_username": "",
+                    "id": "99F2A55DB44F4FE0956DE810456D640F",
+                    "label": "My Profile",
+                    "message": "Profile Updated",
+                    "redirectURL": "",
+                    "showInPopupDialog": "",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": ""
+                }
+            }],
+            "properties": {
+                "hide": "",
+                "id": "category-18AF8F7D16BA4FA5B6565638548508D3",
+                "label": " ",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.LoggedInUserPermission",
+                    "properties": {}
+                }
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.plugin.enterprise.DataListInboxMenu",
+                "properties": {
+                    "appFilter": "process",
+                    "assignment-customFooter": "",
+                    "assignment-customHeader": "",
+                    "cacheAllLinks": "",
+                    "cacheListAction": "",
+                    "customId": "user_approval",
+                    "datalistId": "user_list",
+                    "enableOffline": "",
+                    "id": "CA170C6215434A4292C775DD89AB32B3",
+                    "keyName": "",
+                    "label": "User Register Approval",
+                    "list-customFooter": "",
+                    "list-customHeader": "<h2>#i18n.User Register Approval Inbox#<\/h2>",
+                    "processId": "process1",
+                    "rowCount": "true",
+                    "showDetail": "",
+                    "showPopup": "",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": ""
+                }
+            }],
+            "properties": {
+                "hide": "",
+                "id": "category-566A2DBBBA8C4217A199561406DDCBBC",
+                "label": " ",
+                "permission": {
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+                    "properties": {}
+                }
+            }
+        }
+    ],
+    "className": "org.joget.apps.userview.model.Userview",
+    "properties": {
+        "description": "Center for Employee Self Service",
+        "footerMessage": "<a href=\"http://joget.org/\" target=\"_blank\">Powered by Joget<\/a>",
+        "id": "home",
+        "logoutText": "Logout",
+        "name": " #i18n.Employee Services Portal#",
+        "welcomeMessage": "#date.EEE, d MMM yyyy#"
+    },
+    "setting": {"properties": {
+        "__": "",
+        "hideThisUserviewInAppCenter": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "theme": {
+            "className": "org.joget.plugin.enterprise.UniversalTheme",
+            "properties": {
+                "accentColor": "BLUE",
+                "buttonColor": "GREY",
+                "buttonTextColor": "WHITE",
+                "css": "",
+                "disableHelpGuide": "",
+                "disablePush": "",
+                "disablePwa": "",
+                "enableResponsiveSwitch": "true",
+                "fav_icon": "",
+                "fontColor": "WHITE",
+                "homeAttractBanner": "",
+                "horizontal_menu": "true",
+                "inbox": "all",
+                "js": "",
+                "loginPageBottom": "",
+                "loginPageTop": "",
+                "logo": "",
+                "menuFontColor": "BLACK",
+                "primaryColor": "DARKROYALBLUE",
+                "profile": "true",
+                "removeAssignmentTitle": "true",
+                "shortcut": [],
+                "shortcutLinkLabel": "Shortcut",
+                "subfooter": "",
+                "subheader": "",
+                "themeScheme": "light",
+                "urlsToCache": "",
+                "userImage": "",
+                "userMenu": []
+            }
+        },
+        "userviewDescription": "",
+        "userview_thumbnail": "#appResource.esp_icon.png#"
+    }}
+}

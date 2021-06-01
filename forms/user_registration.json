@@ -1,0 +1,239 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "elementUniqueKey": "142",
+                            "id": "firstName",
+                            "label": "First Name",
+                            "maxlength": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "custom-regex": "",
+                                    "mandatory": "true",
+                                    "message": "",
+                                    "type": ""
+                                }
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "elementUniqueKey": "143",
+                            "id": "lastName",
+                            "label": "Last Name",
+                            "maxlength": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "validator": {
+                                "className": "",
+                                "properties": "{}"
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "elementUniqueKey": "144",
+                            "id": "email",
+                            "label": "Email",
+                            "maxlength": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "custom-regex": "",
+                                    "mandatory": "true",
+                                    "message": "",
+                                    "type": "email"
+                                }
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "properties": {
+                            "id": "status",
+                            "useDefaultWhenEmpty": "",
+                            "value": "Pending",
+                            "workflowVariable": "status"
+                        }
+                    }
+                ],
+                "properties": {
+                    "elementUniqueKey": "138",
+                    "width": "99%"
+                }
+            }],
+            "properties": {
+                "elementUniqueKey": "130",
+                "id": "section1",
+                "label": "User Details",
+                "loadBinder": {
+                    "className": "",
+                    "properties": "{}"
+                },
+                "regex": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": "{}"
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "elementUniqueKey": "157",
+                            "id": "username",
+                            "label": "Desired Username",
+                            "maxlength": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "validator": {
+                                "className": "org.joget.plugin.enterprise.DirectoryUserExistValidator",
+                                "properties": {
+                                    "emptyMsg": "Invalid username.",
+                                    "errorMsg": "Username already exists"
+                                }
+                            },
+                            "value": "",
+                            "workflowVariable": "username"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.PasswordField",
+                        "properties": {
+                            "elementUniqueKey": "158",
+                            "id": "password",
+                            "label": "Password",
+                            "maxlength": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "custom-regex": "",
+                                    "mandatory": "true",
+                                    "message": "",
+                                    "type": ""
+                                }
+                            },
+                            "value": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.PasswordField",
+                        "properties": {
+                            "elementUniqueKey": "159",
+                            "id": "verify_password",
+                            "label": "Verify Password",
+                            "maxlength": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "validator": {
+                                "className": "org.joget.plugin.enterprise.EqualValueValidator",
+                                "properties": {
+                                    "errorMsg": "Passwords do not match",
+                                    "fieldId": "password"
+                                }
+                            },
+                            "value": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "properties": {
+                            "elementUniqueKey": "160",
+                            "id": "active",
+                            "value": "1",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "properties": {
+                            "elementUniqueKey": "161",
+                            "id": "userRoles",
+                            "value": "ROLE_USER",
+                            "workflowVariable": ""
+                        }
+                    }
+                ],
+                "properties": {
+                    "elementUniqueKey": "153",
+                    "width": "99%"
+                }
+            }],
+            "properties": {
+                "elementUniqueKey": "145",
+                "id": "section2",
+                "label": "Login Details",
+                "loadBinder": {
+                    "className": "",
+                    "properties": "{}"
+                },
+                "regex": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": "{}"
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        }
+    ],
+    "properties": {
+        "description": "",
+        "id": "user_registration",
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "name": "User Registration Form",
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "both",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "tableName": "j_user_register"
+    }
+}
