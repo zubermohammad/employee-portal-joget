@@ -1,0 +1,88 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {
+            "customSelectionValue": "",
+            "extraCondition": "",
+            "filters": [],
+            "formDefId": "user_approval",
+            "functionColumns": [],
+            "groupBy": "",
+            "joins": []
+        }
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "id": "column_6",
+            "label": "Desired Username",
+            "name": "username"
+        },
+        {
+            "id": "column_2",
+            "label": "First Name",
+            "name": "firstName"
+        },
+        {
+            "id": "column_1",
+            "label": "Last Name",
+            "name": "lastName"
+        },
+        {
+            "id": "column_3",
+            "label": "Email",
+            "name": "email"
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "format": {
+                "className": "org.joget.apps.datalist.lib.DefaultFormatter",
+                "properties": {
+                    "color": "",
+                    "field": "",
+                    "formDefId": "",
+                    "formatting": "b",
+                    "size": ""
+                }
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_0",
+            "label": "Status",
+            "name": "status",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "id": "column_4",
+            "label": "Date Created",
+            "name": "dateCreated"
+        }
+    ],
+    "description": "",
+    "filters": [{
+        "id": "filter_0",
+        "label": "Desired Username",
+        "name": "username"
+    }],
+    "hidePageSize": "",
+    "id": "user_list",
+    "name": "User Registration List",
+    "order": "1",
+    "orderBy": "dateCreated",
+    "pageSize": "0",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showDataWhenFilterSet": "",
+    "showPageSizeSelector": "true",
+    "useSession": ""
+}

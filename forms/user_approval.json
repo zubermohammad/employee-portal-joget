@@ -1,0 +1,161 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.SubForm",
+                    "properties": {
+                        "elementUniqueKey": "551",
+                        "formDefId": "user_registration",
+                        "id": "registration",
+                        "label": "",
+                        "loadBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": "{}"
+                        },
+                        "parentSubFormId": "",
+                        "readonly": "true",
+                        "readonlyLabel": "",
+                        "storeBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": "{}"
+                        },
+                        "subFormParentId": ""
+                    }
+                }],
+                "properties": {
+                    "elementUniqueKey": "498",
+                    "width": "99%"
+                }
+            }],
+            "properties": {
+                "elementUniqueKey": "494",
+                "id": "section1",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": "{}"
+                },
+                "regex": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": "{}"
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.SelectBox",
+                        "properties": {
+                            "controlField": "",
+                            "id": "status",
+                            "label": "Status",
+                            "multiple": "",
+                            "options": [
+                                {
+                                    "grouping": "",
+                                    "label": "Approved",
+                                    "value": "Approved"
+                                },
+                                {
+                                    "grouping": "",
+                                    "label": "Rejected",
+                                    "value": "Rejected"
+                                }
+                            ],
+                            "optionsBinder": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "custom-regex": "",
+                                    "mandatory": "true",
+                                    "message": "",
+                                    "type": ""
+                                }
+                            },
+                            "value": "",
+                            "workflowVariable": "status"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextArea",
+                        "properties": {
+                            "cols": "20",
+                            "elementUniqueKey": "511",
+                            "id": "comments",
+                            "label": "Comments",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "rows": "5",
+                            "validator": {
+                                "className": "",
+                                "properties": "{}"
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    }
+                ],
+                "properties": {
+                    "elementUniqueKey": "507",
+                    "width": "99%"
+                }
+            }],
+            "properties": {
+                "elementUniqueKey": "501",
+                "id": "section2",
+                "label": "Approval Section",
+                "loadBinder": {
+                    "className": "",
+                    "properties": "{}"
+                },
+                "regex": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": "{}"
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        }
+    ],
+    "properties": {
+        "description": "",
+        "id": "user_approval",
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "name": "User Approval Form",
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "both",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "tableName": "j_user_register"
+    }
+}

@@ -1,0 +1,85 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [{
+        "className": "org.joget.apps.form.model.Section",
+        "elements": [{
+            "className": "org.joget.apps.form.model.Column",
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.lib.CustomHTML",
+                    "properties": {
+                        "elementUniqueKey": "1859",
+                        "id": "field2",
+                        "label": "",
+                        "validator": {
+                            "className": "",
+                            "properties": "{}"
+                        },
+                        "value": "User registration approved, please verify the user and login details below, and click on <b>Complete<\/b> to finish the user registration process."
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.SubForm",
+                    "properties": {
+                        "elementUniqueKey": "1312",
+                        "formDefId": "user_registration",
+                        "id": "field1",
+                        "label": "",
+                        "loadBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": "{}"
+                        },
+                        "parentSubFormId": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "storeBinder": {
+                            "className": "org.joget.plugin.enterprise.DirectoryUserFormBinder",
+                            "properties": "{}"
+                        },
+                        "subFormParentId": ""
+                    }
+                }
+            ],
+            "properties": {"width": "99%"}
+        }],
+        "properties": {
+            "id": "section1",
+            "label": "Confirmation",
+            "loadBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "regex": "",
+            "storeBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "visibilityControl": "",
+            "visibilityValue": ""
+        }
+    }],
+    "properties": {
+        "description": "",
+        "id": "user_creation",
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "name": "User Creation Form",
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "both",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "tableName": "j_user_register"
+    }
+}
