@@ -86,7 +86,7 @@
                             "id": "phoneNumber",
                             "label": "Phone Number",
                             "maxlength": "10",
-                            "placeholder": "",
+                            "placeholder": "Phone Number",
                             "readonly": "",
                             "readonlyLabel": "",
                             "size": "",
