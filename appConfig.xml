@@ -1,0 +1,21 @@
+<appDefinition>
+   <appId>dashboard</appId>
+   <id>dashboard</id>
+   <version></version>
+   <name>Employee Portal</name>
+   <packageDefinitionList/>
+   <formDefinitionList/>
+   <userviewDefinitionList/>
+   <datalistDefinitionList/>
+   <builderDefinitionList/>
+   <pluginDefaultPropertiesList/>
+   <environmentVariableList>
+      <environmentVariable>
+         <id>AppName</id>
+         <value>Employee Portal</value>
+      </environmentVariable>
+   </environmentVariableList>
+   <messageList/>
+   <resourceList/>
+   <license>EG7vI0pxpjL7ThQ8m9sQSeEfsbmWrC4TbI37BKjZlO5jbwy29bpHrw==</license>
+</appDefinition>
